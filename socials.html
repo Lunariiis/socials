@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<!-- Author: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+
+    }
+
+    .icon {
+      /* Change the icon size here */
+      font-size: 2em;
+      /* Change the icons colours here*/
+      color: #ffb0cc
+    }
+
+    .spotify:hover {
+      color: #ff94b9;
+    }
+
+    .instagram:hover {
+      color: #ff94b9;
+    }
+
+    .twitter:hover {
+      color: #ff94b9;
+    }
+
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+
+      <!-- Start instagram Icon -->
+      <div id="instagram" onclick="navigate(this.id)" class="social">
+        <span class="icon instagram"><i class="fab fa-instagram"></i></span>
+      </div>
+      <!-- End instagram Icon -->
+
+      <!-- Start twitter Icon -->
+      <div id="twitter" onclick="navigate(this.id)" class="social">
+        <span class="icon twitter"><i class="fab fa-twitter"></i></span>
+      </div>
+      <!-- End twitter Icon -->
+
+      <!-- Start spotify Icon -->
+      <div id="spotify" onclick="navigate(this.id)" class="social">
+        <span class="icon spotify"><i class="fa-solid fa-spotify"></i></span>
+      </div>
+      <!-- End spotify Icon -->
+
+    </div>
+
+
+
+
+    <script>
+      function navigate(id) {
+
+        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+
+        if (id === "spotify")
+          window.open("https://open.spotify.com/user/lunariis", '_blank').focus(); //Add the url to your blog
+
+        else if (id === "instagram") {
+          window.open("https://www.instagram.com/lunanyanya/", '_blank').focus(); //Add the url to your instagram account
+        }
+        else if (id === "twitter") {
+          window.open("https://twitter.com/bobateabunni", '_blank').focus(); //Add the url to your pinterest account
+        }
+      }
+
+    </script>
+
+
+
+  </body>
+
+</html>
